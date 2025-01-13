@@ -1,0 +1,11 @@
+{
+    "display_name": "Custom Theme Style Inputs",
+    "loading_order": 100,
+    "requires": [],
+    "optional": [],
+    "js": "index.js",
+    "css": "style.css",
+    "author": "icefog72",
+    "version": "0.0.1",
+    "homePage": "https://github.com/LenAnderson/SillyTavern-CustomThemeStyleInputs"
+}

@@ -1,0 +1,28 @@
+.fa-copy::before {
+    content: "\f0c5";
+}
+
+.fa-plus::before {
+    content: "\f067";
+}
+
+.fa-save::before {
+    content: "\f0c7";
+}
+
+.fa-undo::before {
+    content: "\f0e2";
+}
+.ctsi-container {
+    gap: 1rem;
+    padding: 0px !important;
+}
+.ctsi-button-container {   
+    display: flex;
+    justify-content: flex-end;
+    background-color: color-mix(in srgb, var(--SmartThemeShadowColor) 70%, transparent);
+}
+.ctsi-flex-container {
+    gap: 1rem;
+    padding: 6px;
+}
