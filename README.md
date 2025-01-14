@@ -17,7 +17,7 @@ How looks slightly configured:
 
 ## Feedback
 
-My discord [https://discord.gg/2tJcWeMjFQ] (https://discord.gg/2tJcWeMjFQ)
+My discord [https://discord.gg/2tJcWeMjFQ](https://discord.gg/2tJcWeMjFQ)
 
 
 
