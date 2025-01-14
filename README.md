@@ -15,3 +15,10 @@ Open **User Settings** and look under Blur Strength and Shadow Width sliders
 How looks slightly configured:
 ![image](https://github.com/user-attachments/assets/98f6c30b-97e7-452f-804b-e1e3c1e4f775)
 
+## Feedback
+
+My discord [https://discord.gg/2tJcWeMjFQ] (https://discord.gg/2tJcWeMjFQ)
+
+
+
+[ko-fi](https://ko-fi.com/icefog72)
