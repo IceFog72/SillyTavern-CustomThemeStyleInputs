@@ -433,6 +433,9 @@ class CustomThemeSettingsManager {
                             <div id="ctsi-reset-defaults" title="Reset to Defaults" data-i18n="[title]Reset to Defaults" class="menu_button margin0 interactable" tabindex="0">
                                 <i class="fa-solid fa-undo"></i>
                             </div>
+                            <div id="floatingPromptMaximize" class="ctsi-inline-drawer-maximize">
+                                <i class="floating_panel_maximize fa-fw fa-solid fa-window-maximize"></i>
+                            </div>
                         </div>
                     </div>
 
@@ -457,6 +460,7 @@ class CustomThemeSettingsManager {
                 console.error('[CTSI] Failed to copy CSS content to clipboard:', err);
             });
         });
+        
         
         document.getElementById('ctsi-update-customCSS').addEventListener('click', () => {
             try {
@@ -502,6 +506,43 @@ class CustomThemeSettingsManager {
             }
         });
 
+        $(document).on('click', '.ctsi-inline-drawer-maximize', function () {
+            // Toggle icon classes
+            const icon = $(this).find('.inline-drawer-icon, .floating_panel_maximize');
+            icon.toggleClass('fa-window-maximize fa-window-restore');
+            
+            // Find the ctsi-drawer element and modify its classes
+            const drawer = $('#ctsi-drawer');
+            const movingDivs = $('#movingDivs');
+            const originalContainer = $('[name="FontBlurChatWidthBlock"]');
+
+            if (drawer.hasClass('inline-drawer')) {
+                // Store original position and move to movingDivs
+                drawer.data('original-parent', drawer.parent());
+                drawer.appendTo(movingDivs)
+                      .removeClass('inline-drawer')
+                      .addClass('ctsi-drawer-content flexGap5 maximized')
+                      .css({
+                          'display': 'flex',
+                          'opacity': '1'
+                      });
+            } else {
+                // Move back to original position
+                drawer.appendTo(drawer.data('original-parent'))
+                      .removeClass('ctsi-drawer-content flexGap5 maximized')
+                      .addClass('inline-drawer')
+                      .css({
+                          'display': '',
+                          'opacity': ''
+                      });
+            }
+ 
+            // Reset movable styles if needed
+            const drawerId = drawer.attr('id');
+            if (typeof resetMovableStyles === 'function') {
+                resetMovableStyles(drawerId);
+            }
+        });
         document.getElementById('ctsi-reset-defaults').addEventListener('click', () => {
 
 
