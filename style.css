@@ -26,3 +26,22 @@
     gap: 1rem;
     padding: 6px;
 }
+
+.ctsi-drawer-content {
+    position: fixed;
+    padding: 10px;
+    padding-top: 25px;
+    background-color: var(--SmartThemeBlurTintColor) !important;
+    min-width: 100px !important;
+    max-width: 90dvw;
+    width: calc(((100dvw - var(--sheldWidth)) / 2) - 1px);
+    right: unset;
+    overflow-y: auto;
+    flex-direction: column;
+    padding: 1rem;
+    z-index: 4000 !important;
+    border-radius: 6px;
+    padding: 12px;
+    max-height: calc(100dvh - calc(var(--topBarBlockSize) + var(--bottomFormBlockSize)) + var(--theme-margin));
+}
+ 
