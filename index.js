@@ -415,8 +415,8 @@ class CustomThemeSettingsManager {
                     <b>Custom Theme Inputs</b>
                     <div class="inline-drawer-icon fa-solid fa-circle-chevron-down down"></div>
                 </div>
-                <div id="ctsi-drawer-content" style="font-size:small;">
-                    <div class="flex-container ctsi-container inline-drawer-content flexFlowColumn">
+                <div id="ctsi-drawer-content" class="inline-drawer-content" style="font-size:small;">
+                    <div class="flex-container ctsi-container flexFlowColumn">
                         <div class="flex-container ctsi-flex-container" >
                             <div id="cts-row-1" class="flex-container flexFlowColumn" style="flex: 1; flex-direction: column;">
                             </div>
